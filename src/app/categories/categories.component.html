@@ -1,0 +1,19 @@
+<div class="container">
+  <select [(ngModel)]="selectedCategory">
+    <option *ngFor="let category of categories" [ngValue]="category">
+      {{ category.name }}
+    </option>
+  </select>
+
+  <div *ngIf="selectedCategory">
+    <p>{{ selectedCategory.description }}</p>
+    <div class="btn">
+      <button
+        type="button"
+        [routerLink]="['/categories', selectedCategory.name]"
+      >
+        View More
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.container > div {
+  width: 100%;
+}
+
+select,
+.container > div {
+  margin-top: 2rem;
+  width: 60%;
+  padding: 5px 7px;
+}
+
+.container > div{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}

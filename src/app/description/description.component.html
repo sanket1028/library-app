@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>{{ routedCategory?.name }}</h2>
+  <div>
+    <img [src]="routedCategory?.image" />
+  </div>
+  <div id="books">
+    <div *ngFor="let book of routedCategory?.books" class="book">
+      <h4>{{ book.name }}</h4>
+      <p>{{ book.desc }}</p>
+    </div>
+  </div>
+</div>
